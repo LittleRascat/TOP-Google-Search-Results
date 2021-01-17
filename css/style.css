@@ -59,6 +59,17 @@ button {
 
 .search-link {
   font-size: 16px;
+  padding: 5px 15px;
+}
+
+.search-link:hover {
+  animation-name: color;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes color {
+  0% {color: blue; border-bottom: 5px solid blue;}
 }
 
 a {
