@@ -69,7 +69,8 @@ button {
 }
 
 @keyframes color {
-  0% {color: blue; border-bottom: 5px solid blue;}
+  0% {color: blue;}
+  100% {color: blue;}
 }
 
 a {
@@ -81,11 +82,129 @@ a {
   font-size: 13px;
 }
 
+section {
+  margin-left: 125px;
+  width: 700px;
+}
+
+.result {
+  margin: 30px auto;
+}
+
+.url {
+  padding-bottom: 5px;
+}
+
+.result-link {
+  font-size: 22px;
+  color: rgb(70, 70, 228);
+  margin-left: -15px;
+}
+
+.result-link:hover {
+  animation-name: underline;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes underline {
+  0% {text-decoration: underline;}
+  100% {text-decoration: underline;}
+}
+
+.result-description {
+  padding-top: 5px;
+}
+
+label {
+  font-size: 25px;
+  padding: 15px auto;
+}
+
+#also-asked {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+#question-label {
+  padding: 15px 10px;
+  font-size: 25px;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 15px 10px;
+  border-top: 1px solid lightgray;
+}
+
+.feedback {
+  display: block;
+  text-align: right;
+  margin: 5px 10px;
+  font-style: italic;
+}
+
+#design-programs {
+  margin-top: 25px;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+}
+
+#program-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  padding: 15px 10px;
+  margin-bottom: 15px;
+}
+
+#program-table {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.program {
+  width: 100px;
+  height: 160px;
+  margin: auto -10px;
+  padding: 1px;
+  background-color: white;
+  border: 1px solid lightgray;
+}
+
+#more-program {
+  display: block;
+  text-align: center;
+  width: 300px;
+  height: 30px;
+  margin: 5px auto;
+  line-height: 10px;
+  background-color: white;
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  font-size: 16px;
+  color: rgb(70, 70, 228);
+}
+
+#other-search {
+  display: flex;
+  color: rgb(70, 70, 228);
+}
+
+#other-search a {
+  color: rgb(70, 70, 228)
+}
+
 footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
   bottom: 0;
   height: 50px;
   width: 100%;
